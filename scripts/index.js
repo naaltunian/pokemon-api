@@ -5,7 +5,7 @@ const Pokemon = require('../models/Pokemon')
 
 async function main() {
     const start = performance.now();
-    console.log('start')
+    console.log('start...')
 
     let dbConnection
     try {
@@ -19,7 +19,7 @@ async function main() {
     await getPokemon()
 
     // await dbConnection.close()
-    console.log('end')
+    console.log('end...')
     const end = performance.now();
     console.log(`time taken: ${end - start}ms`);
     process.exit(0)
